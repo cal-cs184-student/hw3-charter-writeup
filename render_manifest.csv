@@ -1,0 +1,64 @@
+name,scene,spp,lights,depth,threads,seconds,render_seconds,build_seconds,command
+p1_empty,sky/CBempty,1,1,1,6,0.4256,0.0316,0.0000,HW3_NORMALS=1 HW3_SEED=184 ./build/pathtracer -t 6 -s 1 -l 1 -m 1 -r 480 360 -a 0 0 -f docs/images/p1_empty.png dae/sky/CBempty.dae
+p1_spheres,sky/CBspheres_lambertian,1,1,1,6,0.0617,0.0359,0.0000,HW3_NORMALS=1 HW3_SEED=184 ./build/pathtracer -t 6 -s 1 -l 1 -m 1 -r 480 360 -a 0 0 -f docs/images/p1_spheres.png dae/sky/CBspheres_lambertian.dae
+p1_banana,keenan/banana,1,1,1,6,0.0649,0.0339,0.0004,HW3_NORMALS=1 HW3_SEED=184 ./build/pathtracer -t 6 -s 1 -l 1 -m 1 -r 480 360 -a 0 0 -f docs/images/p1_banana.png dae/keenan/banana.dae
+p2_dragon,sky/dragon,1,1,1,6,0.6688,0.0673,0.0361,HW3_NORMALS=1 HW3_SEED=184 ./build/pathtracer -t 6 -s 1 -l 1 -m 1 -r 480 360 -a 0 0 -f docs/images/p2_dragon.png dae/sky/dragon.dae
+p2_lucy,sky/CBlucy,1,1,1,6,1.0291,0.0324,0.0339,HW3_NORMALS=1 HW3_SEED=184 ./build/pathtracer -t 6 -s 1 -l 1 -m 1 -r 480 360 -a 0 0 -f docs/images/p2_lucy.png dae/sky/CBlucy.dae
+bench_cow_linear,meshedit/cow,1,1,1,1,2.8107,2.7599,0.0000,HW3_BVH_DISABLE=1 HW3_NORMALS=1 HW3_SEED=184 ./build/pathtracer -t 1 -s 1 -l 1 -m 1 -r 480 360 -a 0 0 -f docs/images/bench_cow_linear.png dae/meshedit/cow.dae
+bench_cow_midpoint,meshedit/cow,1,1,1,1,0.1369,0.0876,0.0010,HW3_NORMALS=1 HW3_SEED=184 ./build/pathtracer -t 1 -s 1 -l 1 -m 1 -r 480 360 -a 0 0 -f docs/images/bench_cow_midpoint.png dae/meshedit/cow.dae
+bench_cow_sah,meshedit/cow,1,1,1,1,0.1298,0.0766,0.0028,HW3_BVH_SPLIT=sah HW3_NORMALS=1 HW3_SEED=184 ./build/pathtracer -t 1 -s 1 -l 1 -m 1 -r 480 360 -a 0 0 -f docs/images/bench_cow_sah.png dae/meshedit/cow.dae
+bench_cow_iterative,meshedit/cow,1,1,1,1,0.1402,0.0916,0.0009,HW3_BVH_ITERATIVE=1 HW3_NORMALS=1 HW3_SEED=184 ./build/pathtracer -t 1 -s 1 -l 1 -m 1 -r 480 360 -a 0 0 -f docs/images/bench_cow_iterative.png dae/meshedit/cow.dae
+bench_teapot_linear,meshedit/teapot,1,1,1,1,1.6987,1.6351,0.0000,HW3_BVH_DISABLE=1 HW3_NORMALS=1 HW3_SEED=184 ./build/pathtracer -t 1 -s 1 -l 1 -m 1 -r 480 360 -a 0 0 -f docs/images/bench_teapot_linear.png dae/meshedit/teapot.dae
+bench_teapot_midpoint,meshedit/teapot,1,1,1,1,0.1286,0.0809,0.0003,HW3_NORMALS=1 HW3_SEED=184 ./build/pathtracer -t 1 -s 1 -l 1 -m 1 -r 480 360 -a 0 0 -f docs/images/bench_teapot_midpoint.png dae/meshedit/teapot.dae
+bench_teapot_sah,meshedit/teapot,1,1,1,1,0.1054,0.0628,0.0012,HW3_BVH_SPLIT=sah HW3_NORMALS=1 HW3_SEED=184 ./build/pathtracer -t 1 -s 1 -l 1 -m 1 -r 480 360 -a 0 0 -f docs/images/bench_teapot_sah.png dae/meshedit/teapot.dae
+bench_teapot_iterative,meshedit/teapot,1,1,1,1,0.1268,0.0857,0.0004,HW3_BVH_ITERATIVE=1 HW3_NORMALS=1 HW3_SEED=184 ./build/pathtracer -t 1 -s 1 -l 1 -m 1 -r 480 360 -a 0 0 -f docs/images/bench_teapot_iterative.png dae/meshedit/teapot.dae
+bench_beetle_linear,meshedit/beetle,1,1,1,1,3.4622,3.3707,0.0000,HW3_BVH_DISABLE=1 HW3_NORMALS=1 HW3_SEED=184 ./build/pathtracer -t 1 -s 1 -l 1 -m 1 -r 480 360 -a 0 0 -f docs/images/bench_beetle_linear.png dae/meshedit/beetle.dae
+bench_beetle_midpoint,meshedit/beetle,1,1,1,1,0.1448,0.0754,0.0012,HW3_NORMALS=1 HW3_SEED=184 ./build/pathtracer -t 1 -s 1 -l 1 -m 1 -r 480 360 -a 0 0 -f docs/images/bench_beetle_midpoint.png dae/meshedit/beetle.dae
+bench_beetle_sah,meshedit/beetle,1,1,1,1,0.1398,0.0699,0.0040,HW3_BVH_SPLIT=sah HW3_NORMALS=1 HW3_SEED=184 ./build/pathtracer -t 1 -s 1 -l 1 -m 1 -r 480 360 -a 0 0 -f docs/images/bench_beetle_sah.png dae/meshedit/beetle.dae
+bench_beetle_iterative,meshedit/beetle,1,1,1,1,0.1549,0.0847,0.0012,HW3_BVH_ITERATIVE=1 HW3_NORMALS=1 HW3_SEED=184 ./build/pathtracer -t 1 -s 1 -l 1 -m 1 -r 480 360 -a 0 0 -f docs/images/bench_beetle_iterative.png dae/meshedit/beetle.dae
+p3_CBbunny_hemisphere,sky/CBbunny,64,16,1,6,40.9882,40.7980,0.0072,HW3_SEED=184 ./build/pathtracer -t 6 -s 64 -l 16 -m 1 -r 480 360 -a 0 0 -H -f docs/images/p3_CBbunny_hemisphere.png dae/sky/CBbunny.dae
+p3_CBbunny_light,sky/CBbunny,64,16,1,6,17.9847,17.7918,0.0072,HW3_SEED=184 ./build/pathtracer -t 6 -s 64 -l 16 -m 1 -r 480 360 -a 0 0 -f docs/images/p3_CBbunny_light.png dae/sky/CBbunny.dae
+p3_CBspheres_lambertian_hemisphere,sky/CBspheres_lambertian,64,16,1,6,47.0763,47.0341,0.0000,HW3_SEED=184 ./build/pathtracer -t 6 -s 64 -l 16 -m 1 -r 480 360 -a 0 0 -H -f docs/images/p3_CBspheres_lambertian_hemisphere.png dae/sky/CBspheres_lambertian.dae
+p3_CBspheres_lambertian_light,sky/CBspheres_lambertian,64,16,1,6,31.2315,31.1251,0.0000,HW3_SEED=184 ./build/pathtracer -t 6 -s 64 -l 16 -m 1 -r 480 360 -a 0 0 -f docs/images/p3_CBspheres_lambertian_light.png dae/sky/CBspheres_lambertian.dae
+p3_shadow_l1,sky/CBbunny,1,1,1,6,0.2631,0.0429,0.0079,HW3_SEED=184 ./build/pathtracer -t 6 -s 1 -l 1 -m 1 -r 480 360 -a 0 0 -f docs/images/p3_shadow_l1.png dae/sky/CBbunny.dae
+p3_shadow_l4,sky/CBbunny,1,4,1,6,0.2568,0.0984,0.0072,HW3_SEED=184 ./build/pathtracer -t 6 -s 1 -l 4 -m 1 -r 480 360 -a 0 0 -f docs/images/p3_shadow_l4.png dae/sky/CBbunny.dae
+p3_shadow_l16,sky/CBbunny,1,16,1,6,0.4343,0.2819,0.0071,HW3_SEED=184 ./build/pathtracer -t 6 -s 1 -l 16 -m 1 -r 480 360 -a 0 0 -f docs/images/p3_shadow_l16.png dae/sky/CBbunny.dae
+p3_shadow_l64,sky/CBbunny,1,64,1,6,1.2807,1.1176,0.0070,HW3_SEED=184 ./build/pathtracer -t 6 -s 1 -l 64 -m 1 -r 480 360 -a 0 0 -f docs/images/p3_shadow_l64.png dae/sky/CBbunny.dae
+p4_bunny_m0_acc0,sky/CBbunny,1024,1,0,6,28.0445,27.8894,0.0080,HW3_RR=0 HW3_SEED=184 ./build/pathtracer -t 6 -s 1024 -l 1 -m 0 -r 480 360 -a 0 0 -o 0 -f docs/images/p4_bunny_m0_acc0.png dae/sky/CBbunny.dae
+p4_bunny_m0_acc1,sky/CBbunny,1024,1,0,6,30.969,30.8160,0.0068,HW3_RR=0 HW3_SEED=184 ./build/pathtracer -t 6 -s 1024 -l 1 -m 0 -r 480 360 -a 0 0 -o 1 -f docs/images/p4_bunny_m0_acc1.png dae/sky/CBbunny.dae
+p4_bunny_m1_acc0,sky/CBbunny,1024,1,1,6,54.5575,54.3261,0.0102,HW3_RR=0 HW3_SEED=184 ./build/pathtracer -t 6 -s 1024 -l 1 -m 1 -r 480 360 -a 0 0 -o 0 -f docs/images/p4_bunny_m1_acc0.png dae/sky/CBbunny.dae
+p4_bunny_m1_acc1,sky/CBbunny,1024,1,1,6,63.7202,63.3803,0.0096,HW3_RR=0 HW3_SEED=184 ./build/pathtracer -t 6 -s 1024 -l 1 -m 1 -r 480 360 -a 0 0 -o 1 -f docs/images/p4_bunny_m1_acc1.png dae/sky/CBbunny.dae
+p4_bunny_m2_acc0,sky/CBbunny,1024,1,2,6,109.9631,109.6487,0.0083,HW3_RR=0 HW3_SEED=184 ./build/pathtracer -t 6 -s 1024 -l 1 -m 2 -r 480 360 -a 0 0 -o 0 -f docs/images/p4_bunny_m2_acc0.png dae/sky/CBbunny.dae
+p6_denoise_0,sky/CBbunny,16,4,5,1,18.5934,17.7538,0.0190,HW3_DENOISE=0 HW3_SEED=184 ./build/pathtracer -t 1 -s 16 -l 4 -m 5 -r 480 360 -a 0 0 -f docs/images/p6_denoise_0.png dae/sky/CBbunny.dae
+p4_bunny_m2_acc1,sky/CBbunny,1024,1,2,6,121.053,120.7799,0.0080,HW3_RR=0 HW3_SEED=184 ./build/pathtracer -t 6 -s 1024 -l 1 -m 2 -r 480 360 -a 0 0 -o 1 -f docs/images/p4_bunny_m2_acc1.png dae/sky/CBbunny.dae
+p6_denoise_1,sky/CBbunny,16,4,5,1,17.2926,16.8998,0.0109,HW3_DENOISE=1 HW3_SEED=184 ./build/pathtracer -t 1 -s 16 -l 4 -m 5 -r 480 360 -a 0 0 -f docs/images/p6_denoise_1.png dae/sky/CBbunny.dae
+p4_bunny_m3_acc0,sky/CBbunny,1024,1,3,6,143.4648,143.1247,0.0083,HW3_RR=0 HW3_SEED=184 ./build/pathtracer -t 6 -s 1024 -l 1 -m 3 -r 480 360 -a 0 0 -o 0 -f docs/images/p4_bunny_m3_acc0.png dae/sky/CBbunny.dae
+p4_bunny_m3_acc1,sky/CBbunny,1024,1,3,6,163.499,163.1840,0.0094,HW3_RR=0 HW3_SEED=184 ./build/pathtracer -t 6 -s 1024 -l 1 -m 3 -r 480 360 -a 0 0 -o 1 -f docs/images/p4_bunny_m3_acc1.png dae/sky/CBbunny.dae
+p4_bunny_m4_acc0,sky/CBbunny,1024,1,4,6,172.8018,484.1968,0.0072,HW3_RR=0 HW3_SEED=184 ./build/pathtracer -t 6 -s 1024 -l 1 -m 4 -r 480 360 -a 0 0 -o 0 -f docs/images/p4_bunny_m4_acc0.png dae/sky/CBbunny.dae
+p4_bunny_m4_acc1,sky/CBbunny,1024,1,4,6,296.6603,435.6627,0.0090,HW3_RR=0 HW3_SEED=184 ./build/pathtracer -t 6 -s 1024 -l 1 -m 4 -r 480 360 -a 0 0 -o 1 -f docs/images/p4_bunny_m4_acc1.png dae/sky/CBbunny.dae
+p4_bunny_m5_acc0,sky/CBbunny,1024,1,5,6,262.8888,1202.2636,0.0078,HW3_RR=0 HW3_SEED=184 ./build/pathtracer -t 6 -s 1024 -l 1 -m 5 -r 480 360 -a 0 0 -o 0 -f docs/images/p4_bunny_m5_acc0.png dae/sky/CBbunny.dae
+p4_bunny_m5_acc1,sky/CBbunny,1024,1,5,6,226.0805,491.6564,0.0073,HW3_RR=0 HW3_SEED=184 ./build/pathtracer -t 6 -s 1024 -l 1 -m 5 -r 480 360 -a 0 0 -o 1 -f docs/images/p4_bunny_m5_acc1.png dae/sky/CBbunny.dae
+p4_rr_m0,sky/CBbunny,1024,1,0,6,30.9549,30.6367,0.0077,HW3_SEED=184 ./build/pathtracer -t 6 -s 1024 -l 1 -m 0 -r 480 360 -a 0 0 -f docs/images/p4_rr_m0.png dae/sky/CBbunny.dae
+p4_rr_m1,sky/CBbunny,1024,1,1,6,72.0561,827.5119,0.0070,HW3_SEED=184 ./build/pathtracer -t 6 -s 1024 -l 1 -m 1 -r 480 360 -a 0 0 -f docs/images/p4_rr_m1.png dae/sky/CBbunny.dae
+p4_rr_m2,sky/CBbunny,1024,1,2,6,175.6274,1503.7582,0.0116,HW3_SEED=184 ./build/pathtracer -t 6 -s 1024 -l 1 -m 2 -r 480 360 -a 0 0 -f docs/images/p4_rr_m2.png dae/sky/CBbunny.dae
+p4_rr_m3,sky/CBbunny,1024,1,3,6,215.8377,405.2524,0.0077,HW3_SEED=184 ./build/pathtracer -t 6 -s 1024 -l 1 -m 3 -r 480 360 -a 0 0 -f docs/images/p4_rr_m3.png dae/sky/CBbunny.dae
+p4_rr_m4,sky/CBbunny,1024,1,4,6,211.6417,1324.9898,0.0135,HW3_SEED=184 ./build/pathtracer -t 6 -s 1024 -l 1 -m 4 -r 480 360 -a 0 0 -f docs/images/p4_rr_m4.png dae/sky/CBbunny.dae
+p4_rr_m100,sky/CBbunny,1024,1,100,6,156.3987,156.1199,0.0084,HW3_SEED=184 ./build/pathtracer -t 6 -s 1024 -l 1 -m 100 -r 480 360 -a 0 0 -f docs/images/p4_rr_m100.png dae/sky/CBbunny.dae
+p4_spheres_global,sky/CBspheres_lambertian,1024,1,5,6,220.1902,219.9902,0.0000,HW3_SEED=184 ./build/pathtracer -t 6 -s 1024 -l 1 -m 5 -r 480 360 -a 0 0 -f docs/images/p4_spheres_global.png dae/sky/CBspheres_lambertian.dae
+p4_bunny_indirect,sky/CBbunny,1024,1,5,6,203.7525,203.5030,0.0096,HW3_INDIRECT_ONLY=1 HW3_RR=0 HW3_SEED=184 ./build/pathtracer -t 6 -s 1024 -l 1 -m 5 -r 480 360 -a 0 0 -f docs/images/p4_bunny_indirect.png dae/sky/CBbunny.dae
+p4_spp_1,sky/CBbunny,1,4,5,6,0.5254,0.2652,0.0071,HW3_SEED=184 ./build/pathtracer -t 6 -s 1 -l 4 -m 5 -r 480 360 -a 0 0 -f docs/images/p4_spp_1.png dae/sky/CBbunny.dae
+p4_spp_2,sky/CBbunny,2,4,5,6,1.341,0.9606,0.0086,HW3_SEED=184 ./build/pathtracer -t 6 -s 2 -l 4 -m 5 -r 480 360 -a 0 0 -f docs/images/p4_spp_2.png dae/sky/CBbunny.dae
+p4_spp_4,sky/CBbunny,4,4,5,6,1.3949,1.1163,0.0082,HW3_SEED=184 ./build/pathtracer -t 6 -s 4 -l 4 -m 5 -r 480 360 -a 0 0 -f docs/images/p4_spp_4.png dae/sky/CBbunny.dae
+p4_spp_8,sky/CBbunny,8,4,5,6,2.5056,2.3512,0.0074,HW3_SEED=184 ./build/pathtracer -t 6 -s 8 -l 4 -m 5 -r 480 360 -a 0 0 -f docs/images/p4_spp_8.png dae/sky/CBbunny.dae
+p4_spp_16,sky/CBbunny,16,4,5,6,4.6879,4.5308,0.0076,HW3_SEED=184 ./build/pathtracer -t 6 -s 16 -l 4 -m 5 -r 480 360 -a 0 0 -f docs/images/p4_spp_16.png dae/sky/CBbunny.dae
+p4_spp_64,sky/CBbunny,64,4,5,6,19.4501,19.2767,0.0082,HW3_SEED=184 ./build/pathtracer -t 6 -s 64 -l 4 -m 5 -r 480 360 -a 0 0 -f docs/images/p4_spp_64.png dae/sky/CBbunny.dae
+p4_spp_1024,sky/CBbunny,1024,4,5,6,337.6855,337.4255,0.0074,HW3_SEED=184 ./build/pathtracer -t 6 -s 1024 -l 4 -m 5 -r 480 360 -a 0 0 -f docs/images/p4_spp_1024.png dae/sky/CBbunny.dae
+p5_CBbunny,sky/CBbunny,2048,1,5,6,134.763,134.1730,0.0151,HW3_SEED=184 ./build/pathtracer -t 6 -s 2048 -l 1 -m 5 -r 480 360 -a 0 0 -a 64 0.05 -f docs/images/p5_CBbunny.png dae/sky/CBbunny.dae
+p5_CBspheres_lambertian,sky/CBspheres_lambertian,2048,1,5,6,239.909,1269.9186,0.0000,HW3_SEED=184 ./build/pathtracer -t 6 -s 2048 -l 1 -m 5 -r 480 360 -a 0 0 -a 64 0.05 -f docs/images/p5_CBspheres_lambertian.png dae/sky/CBspheres_lambertian.dae
+p6_random_s4,sky/CBbunny,4,4,5,6,2.1583,1.8043,0.0097,HW3_SAMPLER=random HW3_SEED=184 ./build/pathtracer -t 6 -s 4 -l 4 -m 5 -r 480 360 -a 0 0 -f docs/images/p6_random_s4.png dae/sky/CBbunny.dae
+p6_random_s16,sky/CBbunny,16,4,5,6,7.1395,16.2827,0.0142,HW3_SAMPLER=random HW3_SEED=184 ./build/pathtracer -t 6 -s 16 -l 4 -m 5 -r 480 360 -a 0 0 -f docs/images/p6_random_s16.png dae/sky/CBbunny.dae
+p6_alias_random_s4,sky/CBbunny,4,1,1,1,0.3289,0.1632,0.0077,HW3_NORMALS=1 HW3_SAMPLER=random HW3_SEED=184 ./build/pathtracer -t 1 -s 4 -l 1 -m 1 -r 480 360 -a 0 0 -f docs/images/p6_alias_random_s4.png dae/sky/CBbunny.dae
+p6_jittered_s4,sky/CBbunny,4,4,5,6,1.2201,1.0622,0.0067,HW3_SAMPLER=jittered HW3_SEED=184 ./build/pathtracer -t 6 -s 4 -l 4 -m 5 -r 480 360 -a 0 0 -f docs/images/p6_jittered_s4.png dae/sky/CBbunny.dae
+p6_jittered_s16,sky/CBbunny,16,4,5,6,4.9494,4.7950,0.0079,HW3_SAMPLER=jittered HW3_SEED=184 ./build/pathtracer -t 6 -s 16 -l 4 -m 5 -r 480 360 -a 0 0 -f docs/images/p6_jittered_s16.png dae/sky/CBbunny.dae
+p6_alias_jittered_s4,sky/CBbunny,4,1,1,1,0.3572,0.1889,0.0083,HW3_NORMALS=1 HW3_SAMPLER=jittered HW3_SEED=184 ./build/pathtracer -t 1 -s 4 -l 1 -m 1 -r 480 360 -a 0 0 -f docs/images/p6_alias_jittered_s4.png dae/sky/CBbunny.dae
+p6_alias_reference,sky/CBbunny,1024,1,1,1,49.8202,51.2255,0.0070,HW3_NORMALS=1 HW3_SEED=184 ./build/pathtracer -t 1 -s 1024 -l 1 -m 1 -r 480 360 -a 0 0 -f docs/images/p6_alias_reference.png dae/sky/CBbunny.dae
