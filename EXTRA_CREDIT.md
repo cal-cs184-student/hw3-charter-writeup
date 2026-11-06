@@ -1,6 +1,6 @@
 # Extra-credit status
 
-We implemented four of the listed extensions:
+We implemented five of the listed extensions:
 
 | Extension | Evidence |
 | --- | --- |
@@ -8,16 +8,19 @@ We implemented four of the listed extensions:
 | Surface area heuristic | Optional 12-bin BVH split rule, with construction and rendering times on three scenes. |
 | Iterative BVH construction and traversal | Optional `std::stack` implementations, compared with recursion on the same three scenes. |
 | Bilateral denoising | Optional 5 by 5 filter in linear RGB, paired noisy and filtered renders, and comparison with a high-sample reference. |
+| Motion blur | A procedural Pikachu dash, matched sharp/blurred stills, a turning-point comparison, and a looping rendered animation. |
 
 All explanations, images, and measurements belong in Part 6 of the report.
 The render manifest records the exact commands. The required random sampler,
 midpoint BVH, and unfiltered output remain the defaults.
 
-## Awaiting artistic direction
+## Motion blur
 
-We deferred **motion blur**. To proceed, we need the scene or subject, the
-desired movement, and how much blur to show. The listed extension requires
-storing start and end vertex positions and sampling time along each ray.
+We used the requested Pikachu direction for a character darting back and forth.
+We store the extreme positions of each moving triangle's vertices, sample a
+time within the exposure, and keep that time consistent along the full light
+path. See `MOTION_BLUR.md` and Part 6 of the report for the implementation and
+rendered comparisons.
 
 ## Other extensions not implemented
 
